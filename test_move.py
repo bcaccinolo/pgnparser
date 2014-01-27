@@ -9,5 +9,7 @@ class TestMove(unittest.TestCase):
 
     def test_dump(self):
         m = Move()
+        m.id = 1
         m.white = 'e4'
+        m.black = 'd5'
         self.assertEqual(m.dump(), '1. e4 d5')
